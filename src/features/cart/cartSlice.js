@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import cartItems from '../../cartItems';
+import { v4 as uuidv4 } from 'uuid';
 
 const initialState ={
     cartItems: cartItems,
@@ -16,6 +17,7 @@ const cartSlice = createSlice({
       const newObject = {
         title: action.payload.title,
         author: action.payload.author,
+        id: uuidv4(),
       };
       state.bookList.push(newObject);
     },
