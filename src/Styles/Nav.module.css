@@ -1,0 +1,9 @@
+.nav {
+    display: flex;
+    background-color: rgb(32, 32, 235);
+    justify-content: center;
+}
+
+.center {
+display: flex;
+}

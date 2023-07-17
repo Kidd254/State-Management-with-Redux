@@ -1,0 +1,35 @@
+.itemsContainer {
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+}
+
+.columnone {
+    order: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+order: 0
+}
+
+.price {
+order: 1;
+}
+
+.column {
+order: 1;
+}
+.image {
+    order: 2;
+    height: 20px;
+    height: 10px;
+    padding-bottom: 20px;
+}
+
+.btnContainer {
+    order: 3;
+    display: flex;
+}
